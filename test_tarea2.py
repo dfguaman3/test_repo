@@ -4,12 +4,12 @@ from tarea2 import Persona
 class TestPersona (unittest.TestCase):
     try:
         def setUp(self):
-            self.datos = Persona('Daniel','Guaman',1990,5,720,"par")#Nombre,Apellido,año_nacimiento,promediolista,factorial,modulo
+            self.datos = Persona('Daniel','Armijos',1990,5,720,"par")#Nombre,Apellido,año_nacimiento,promediolista,factorial,modulo
         print('Setting up1')
         def tearDown(self):
             print('Setting up2')
         def test_fullname(self):
-            self.assertEqual(self.datos.fullname,'Daniel Guaman')
+            self.assertEqual(self.datos.fullname,'Daniel Armijos')
         def test_date(self):
             self.assertEqual(self.datos.date, 31)
         def test_mean_list(self):
